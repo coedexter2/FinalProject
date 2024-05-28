@@ -3,6 +3,6 @@ from . import views
 
 urlpatterns = [
     path('', views.input),
-    path('file', views.waiting)
+    path('wait/', views.waiting, name='waiting_name')
     
 ]
