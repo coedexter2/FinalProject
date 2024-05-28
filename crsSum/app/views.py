@@ -63,7 +63,7 @@ def results(request):
         new_string = " ".join(new_Lines)
         
         
-    token = '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'
+    token = ''
     login = token
     tokenizer = AutoTokenizer.from_pretrained("google/gemma-2b-it", token=login)
     model = AutoModelForCausalLM.from_pretrained(
