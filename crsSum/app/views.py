@@ -80,7 +80,7 @@ def results(request):
     
     summary = tokenizer.decode(outputs[0])
     
-    promt_length = len(input_text)
+    prompt_length = len(input_text)
     
     output_without_prompt = summary[prompt_length:] if len(summary) > prompt_length else ""
     return render(request, 'results.html', {'summary': summary})
